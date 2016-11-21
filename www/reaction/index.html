@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <title>TRAID Film Reaction</title>
+		<link rel="stylesheet" href="../style.css">
+	</head>
+
+	<body>
+		<section id="reaction-page">
+			<p>How did this film make you feel?  </p>
+			<div id="emoji-button">
+				<button id="shocked">
+					<img src="../images/emojis/1f62e.png">
+				</button>
+				<button id="sad">
+					<img src="../images/emojis/1f625.png">
+				</button>
+				</button>
+				<button id="angry">
+					<img src="../images/emojis/1f621.png">
+				</button>
+				<button id="thoughtful">
+					<img src="../images/emojis/1f914.png">
+				</button>
+			</div>
+
+			<form>
+				<div>
+					<p>Any comments? We will share them with the garment workers involved in this project.  
+					</p>
+					<span id="reaction-text" contenteditable="true"></span>
+				</div>
+				<div>
+					<p>Please leave your email to find out more and receive links to longer versions of the films. We won’t share your details with anyone.
+					</p>
+				</div>
+					<input type="email" name="email" id="email">
+			</form>
+			<button type="button" id="send">Submit</button>
+			<button type="button" id="go-back">Go Back</button>
+		</section>
+
+<!-- Success or Failure Page -->
+	<div id="response"></div>
+
+		<section id="success">
+			<p>Thank you</p>
+			<p id="help">How you help</p>
+			<p id="support">Shopping at TRAID charity shops and donating unwanted clothes
+				raises funds to support projects to improve the lives of garment
+				workers globally.</p>
+			<p class="credits">Credits :</p>
+			<p class="credits">Garment Workers / TRAID / Central / RC / LBL / Brandy Easter </p>
+				<div id="replay"><img src="..//21aa.png"/></div>
+			<p id="emoji-credit"> Emoji provided free by http://emojione.com </p>
+		</section>
+
+		<section id="email-error">
+			<p>Please provide a valid email address</p>
+			<button id="emailResubmit">Resubmit</button>
+		</section>
+
+		<section id="comment-error">
+			<p>Error</p>
+			<p>Please leave a comment</p>
+			<button id="comment-resubmit">Resubmit</button>
+		</section>
+
+		<section id="emoji-error">
+			<p>Error</p>
+			<p>Please select an emoji</p>
+			<button id="emoji-resubmit">Resubmit</button>
+		</section>
+
+		<section id="connection-error">
+			<p>Error</p>
+			<p>There seems to be a probem with the network</p>
+			<button id="connection-resubmit">Resubmit</button>
+		</section>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="../form.js"></script>
+
+	</body>
+
+</html>
